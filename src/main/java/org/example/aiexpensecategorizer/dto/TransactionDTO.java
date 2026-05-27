@@ -11,6 +11,7 @@ public class TransactionDTO {
     private String description;
     private double amount;
     private String category;
+    private String sourceFile;
 
     public TransactionDTO(String date, String description, double amount) {
         this.date = date;

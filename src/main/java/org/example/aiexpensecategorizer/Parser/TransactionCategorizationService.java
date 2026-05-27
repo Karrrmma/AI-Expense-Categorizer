@@ -33,7 +33,7 @@ public class TransactionCategorizationService {
            Map<Integer, String> aiResult = aiCategorizationService.categorizeTransaction(needsAi);
            for(int i = 0; i <needsAi.size(); i++){
                TransactionDTO transaction = needsAi.get(i);
-               String aiCategory = aiResult.get(i);
+               String aiCategory = aiResult.getOrDefault(i, "Other");
                transaction.setCategory(aiCategory);
            }
 
@@ -107,6 +107,5 @@ public class TransactionCategorizationService {
     }
 
 }
-
 
 

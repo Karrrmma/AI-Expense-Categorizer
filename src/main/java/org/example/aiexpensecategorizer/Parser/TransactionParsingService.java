@@ -24,7 +24,8 @@ public class TransactionParsingService {
 
         String currentDate = null;
         StringBuilder descriptionBuilder = new StringBuilder();
-        boolean inTransactionSection = false;
+        boolean inTransactionSe
+        ction = false;
 
         for (String rawLine : lines) {
             String line = rawLine.trim();
